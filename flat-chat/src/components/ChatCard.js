@@ -35,12 +35,12 @@ function ChatCard({post, onDeletePost}) {
         <p className="card-location">{location}</p>
         <p className="card-info">{thread_post}</p>
 
-        {like_button ? (
-        <button className="primary" onClick = {handleLikeUpdate}>👍</button>
+        {like_button  ? (
+        <button className="primary"  onClick = {handleLikeUpdate}>👍</button>
       ) : (
-        <button onClick = {handleLikeUpdate}>👎</button>
+        <button className="secondary" onClick = {handleLikeUpdate}>👎</button>
       )}
-      <button onClick = {handleDeleteClick}>🗑</button>
+      <button className="trash" onClick = {handleDeleteClick}>🗑</button>
     </div>
 </div>
   );
