@@ -23,11 +23,11 @@ body {
   font-size: 20px;
   color: var(--color);
   background-color: var(--background);
-  position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 code {
@@ -35,25 +35,46 @@ code {
     monospace;
 }
 
+/*Header*/
 .logo {
   color: var(--turquoise);
   text-align: center;
   font-size: 1.350em;
   font-family: Helvetica;
   margin-right: 0.5rem;
+  margin-left: 1rem;
   font-weight: bold;
 }
 
-.about:hover{
-color: (--turquoise)
+.about:hover {
+  color: (--turquoise)
 }
 
 .title {
- text-align: center;
- margin-right: 15rem;
+  text-align: center;
+  margin-right: 15rem;
+}
+
+.logotitle {
+  margin-left: 0.5rem;
 }
 
 .slogan {
   text-align: center;
-  margin-right: 15rem ;
+  /* margin-right: 15rem; */
+}
+
+/*Chat page title*/
+.chatpage {
+  text-align: center
+}
+
+/*Contact page*/
+.contact {
+  text-align: center;
+}
+
+
+.about-text {
+  text-align: center;
 }

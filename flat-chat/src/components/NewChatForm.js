@@ -24,8 +24,7 @@ function NewChatForm({ onAddChat }) {
 
   return (
     <div className="new-chat-form">
-      <h2>Send a Chat!</h2>
-      <form onSubmit= {handleSubmit}>
+      <form className="new-chat-form" onSubmit= {handleSubmit}>
         <input type="text" name="phase" placeholder="What phase is this for?" value= {phase} onChange= {(e)=> setPhase(e.target.value)}/>
         <input type="text" name="topic" placeholder="What's this about?" value= {topic} onChange= {(e)=> setTopic(e.target.value)}/>
         <input type="text" name="location" placeholder="Where are you located?" value= {location} onChange= {(e) => setLocation(e.target.value)}/>

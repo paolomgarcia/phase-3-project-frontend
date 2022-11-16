@@ -35,6 +35,7 @@ function ChatPage() {
 
   return (
     <>
+    <h1 className= "chatpage" >Send a Chat!</h1>
     <NewChatForm onAddChat = {handleAddChat}/>
     <ChatList onDeletePost = {onDeletePost} chats = {chats}/>
     </>
