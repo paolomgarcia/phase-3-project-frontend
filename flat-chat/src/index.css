@@ -19,8 +19,8 @@
 }
 
 body {
-  font-family: "Fira Code", monospace;
-  font-size: 16px;
+  font-family: "san-serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
   color: var(--color);
   background-color: var(--background);
 }
@@ -35,8 +35,19 @@ code {
 
 .logo {
   color: var(--turquoise);
-  font-size: 1.25em;
+  text-align: center;
+  font-size: 7.00em;
   font-family: Helvetica;
   margin-right: 0.5rem;
 }
+
+.about:hover{
+color: (--turquoise)
+}
+
+.title {
+ text-align: center;
+ margin-right: 15rem;
+}
+
 

@@ -6,7 +6,7 @@ import Search from "./Search";
 function HomePage() {
 
   const [chats, setChats] = useState([])
-  const [searchTerm, setSearch] = useState("")
+  
 
   useEffect(() => {
     fetch("")
@@ -18,16 +18,11 @@ function HomePage() {
    const updatedChats = [...chats, newChat]
     setChats(updatedChats);
   }
-  const chatsToDisplay = chats.filter((chat) => {
-    return chat.phase.toLowerCase().includes(searchTerm.toLowerCase());
-  });
-
+  
 
   return (
     <main>
-      <NewChatForm onAddChat = {handleAddChat}/>
-      <Search searchTerm= {searchTerm} onSearchChange = {setSearch}/>
-      <ChatList chats = {chatsToDisplay}/>
+      
     </main>
   );
 }
