@@ -21,9 +21,9 @@ function HomePage() {
   
 
   return (
-    <main>
-      
-    </main>
+    <h3 className="slogan">
+      "Your place for all Flatiron School communications."
+    </h3>
   );
 }
 

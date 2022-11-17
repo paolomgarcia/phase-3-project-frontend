@@ -3,7 +3,7 @@ import React from "react";
 function Search({onSearchChange, searchTerm}) {
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search Games:</label>
+      <label htmlFor="search">Search Posts :</label>
       <input
         type="text"
         id="search"

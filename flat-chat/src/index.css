@@ -23,6 +23,11 @@ body {
   font-size: 20px;
   color: var(--color);
   background-color: var(--background);
+  position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 
 
@@ -48,6 +53,11 @@ color: (--turquoise)
 .title {
  text-align: center;
  margin-right: 15rem;
+}
+
+.slogan {
+  text-align: center;
+  margin-right: 15rem ;
 }
 
 

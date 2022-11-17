@@ -14,7 +14,7 @@ function Header() {
       };
 
   return (
-    <header className= "header">
+    <header id= "header">
     <NavLink className= "about" to= "/about" style={linkStyles}>About </NavLink>
     <NavLink to= "/" style={linkStyles}>Home</NavLink>
     <span className="logo">{"//"}</span>
