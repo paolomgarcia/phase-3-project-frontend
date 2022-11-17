@@ -1,11 +1,13 @@
 import React from "react";
-import ChatPage from "./ChatPage";
+import ChatCard from "./ChatCard";
 
-function ChatList({chats}) {
+function ChatList({chats, onDeletePost}) {
+    console.log(chats)
  const cards = chats.map((chat) => {
   return(
-  <ChatPage key= {chat.id} 
-    chat = {chat}
+  <ChatCard key= {chat.id} 
+    post = {chat}
+    onDeletePost = {onDeletePost}
   />)
  })
   return (
