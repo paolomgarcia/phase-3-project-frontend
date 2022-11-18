@@ -20,14 +20,10 @@
 
 body {
   font-family: "san-serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow-y: scroll;
   font-size: 20px;
   color: var(--color);
   background-color: var(--background);
-  position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
 }
 
 code {
@@ -44,6 +40,7 @@ code {
   font-weight: bold;
 }
 
+
 .about:hover{
 color: (--turquoise)
 }
@@ -56,4 +53,74 @@ color: (--turquoise)
 .slogan {
   text-align: center;
   margin-right: 15rem ;
+}
+
+.new-chat-form {
+  color: rgb(6, 4, 4);
+  border-radius: 25px;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: var(--turquoise)}
+
+  .new-chat-form input {
+    border-color: transparent;
+    border-radius: 25px;
+    margin-right: 2rem;
+    flex: 1;
+  }
+
+  .new-chat-form button {
+    color: black;
+    border-color: transparent;
+    width: 150px;
+    border-radius: 25px;
+
+  }
+
+
+
+.card-body{
+  position: absolute;
+  background: var(--turquoise);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card{
+  width: 200px;
+  height: 500px;
+  padding: 3rem;
+  border-radius: 20px;
+  overflow: scroll;
+  position: relative;
+  display: flex;
+}
+
+@media (min-width: 600px) {
+
+.cards{
+    display: flex;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+  }
+}
+
+.card button {
+  border-color: transparent;
+  background: black;
+  color: black;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 0.5rem;
+  padding: 10px;
+}
+
+.card-topic{
+
 }
