@@ -1,29 +1,22 @@
-import React, { useEffect, useState } from "react";
-import NewChatForm from "./NewChatForm";
-import ChatList from "./ChatList";
-import Search from "./Search";
+import React from "react";
+
 
 function HomePage() {
 
-  const [chats, setChats] = useState([])
-  
 
-  useEffect(() => {
-    fetch("")
-    .then((r) => r.json())
-    .then((chatArray) => {setChats(chatArray)})
-  }, [])
-
-  function handleAddChat(newChat){
-   const updatedChats = [...chats, newChat]
-    setChats(updatedChats);
-  }
+  // function handleAddChat(newChat){
+  //  const updatedChats = [...chats, newChat]
+  //   setChats(updatedChats);
+  // }
   
 
   return (
-    <h3 className="slogan">
+    <div className="slogan">
+      <h3>
       "Your place for all Flatiron School communications."
-    </h3>
+      </h3>
+      <h3>"Oh god, what now?" -Sam</h3>    
+    </div>
   );
 }
 

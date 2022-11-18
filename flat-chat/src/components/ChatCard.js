@@ -31,7 +31,7 @@ function ChatCard({post, onDeletePost}) {
     <div className="card">
     <div className="card-body">
         <h2 className="card-topic">{topic}</h2>
-        <h3 className="card-phase">{phase}</h3>
+        <h3 className="card-phase">Phase {phase}</h3>
         <p className="card-location">{location}</p>
         <p className="card-info">{thread_post}</p>
 

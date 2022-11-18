@@ -9,8 +9,6 @@ function ChatPage() {
     const [chats, setChats] = useState([])
 
     useEffect(() => {
-        console.log("hello inside use effect")
-
         fetch(`http://localhost:9292/post`)
             .then((r) => r.json())
             .then((chatArray) => {

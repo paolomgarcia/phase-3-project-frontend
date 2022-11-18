@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 function Header() {
     const linkStyles = {
-        textAlign: "center",
+        // textAlign: "center",
         // display: "inline-block",
         width: "75px",
         padding: "12px",
@@ -16,7 +16,10 @@ function Header() {
   return (
     <header id= "header">
       {/* <span className="logo">{"//"}</span> */}
-      <span className="logo">{"//The Flat Chat"}</span>
+      <span className="logo">
+          {"//"}
+        <span className="logotitle">The Flat Chat</span>
+      </span>
       <NavLink to= "/" style={linkStyles}>|Home|</NavLink>
       <NavLink to= "/chat" style={linkStyles}>|Chat|</NavLink>
       {/* <span className="logo">{"//"}</span> */}

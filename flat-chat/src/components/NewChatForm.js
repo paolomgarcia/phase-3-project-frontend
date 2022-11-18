@@ -26,11 +26,11 @@ function NewChatForm({ onAddChat }) {
     <div className="new-chat-form">
       <h2>Send a Chat!</h2>
       <form onSubmit= {handleSubmit}>
-        <input type="text" name="phase" placeholder="Phase" value= {phase} onChange= {(e)=> setPhase(e.target.value)}/>
-        <input type="text" name="topic" placeholder="Topic" value= {topic} onChange= {(e)=> setTopic(e.target.value)}/>
+      <input type="text" name="topic" placeholder="Topic" value= {topic} onChange= {(e)=> setTopic(e.target.value)}/>
+        <input type="text" name="phase" placeholder="Phase #" value= {phase} onChange= {(e)=> setPhase(e.target.value)}/>
         <input type="text" name="location" placeholder="Location" value= {location} onChange= {(e) => setLocation(e.target.value)}/>
         <input type="text" name="thread_post" placeholder="Message" value= {thread_post} onChange= {(e)=> setThread(e.target.value)}/>
-        <button className= "add-chat" type="submit">Send Chat!</button>
+        <button className= "add-chat" type="submit">Send it!</button>
       </form>
     </div>
   );
