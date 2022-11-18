@@ -8,7 +8,7 @@ function NewChatForm({ onAddChat }) {
 
   function handleSubmit(e){
     e.preventDefault();
-    fetch("",{
+    fetch("http://localhost:9292/posts",{
     method: "POST",
     headers:{"Content-Type": "application/json",},
     body: JSON.stringify({

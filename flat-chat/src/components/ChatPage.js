@@ -11,7 +11,7 @@ function ChatPage() {
     useEffect(() => {
         console.log("hello inside use effect")
 
-        fetch("http://localhost:9292/post")
+        fetch(`http://localhost:9292/post`)
             .then((r) => r.json())
             .then((chatArray) => {
                 // console.log("hello")
